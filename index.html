@@ -71,7 +71,7 @@
                 knowledge.</p>
             <div class="box-container">
                 <div class="box">
-                    <p> <span> age: </span> 22 </p>
+                    <p> <span> age: </span> 21 </p>
                     <p> <span> gender: </span> male </p>
                     <p> <span> date of birth  : </span> 08/03/2002 </p>
                     <p> <span> linkedin : </span> Anirudha Kapare </p>
@@ -239,19 +239,22 @@
         <div class="image">
             <img class="tilt" src="images/contact-img.svg" alt="">
         </div>
-
-        <form action="mailto:kapareanirudha008@gmail.com">
+        <form 
+  action="https://formspree.io/f/myyapnba"
+  method="POST"
+          >
+ 
 
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" placeholder="name" name="inputBox" required>
+                <input type="email" placeholder="email" name="mail" required>
             </div>
 
-            <input type="text" placeholder="subject" class="box">
+            <input type="text" placeholder="subject" class="box" name="box" required>
 
             <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
 
-            <input type="submit" class="btn" value="send message">
+            <input type="submit" class="btn" value="send message" name="btn" required>
 
         </form>
 
@@ -286,7 +289,7 @@
 <!-- particles.js links  -->
 <script src="js/particles.min.js"></script>
 <script src="js/app.js"></script>
-
+<script>(function(w, d) { w.CollectId = "640e18c3bddfe03b3a3cf6e6"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 <!-- vanilla-tilt.js link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
 
@@ -306,7 +309,7 @@ window.onscroll = () =>{
 };
 
 var typed = new Typed('.typing-text', {
-    strings : [ 'designer' ,'coder', 'web developer','front end developer'],
+    strings : [ 'designer' ,'coder','front end developer'],
     loop : true,
     typeSpeed : 150
 });
